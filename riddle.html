@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <title>About</title>
+</head>
+<nav>
+    <div class="navigation">
+        <a href="index.html" class="navigation">Home</a>
+        <a href="contact.html" class="navigation">Contact</a>
+        <a href="about.html" class="navigation">About</a>
+        <a href="riddle.html" class="active">Riddle</a>
+    </div>
+</nav>
+<body>
+    <div class="container">
+        <div class="col" id="section" >
+            <div class="col" >
+                <p class="h2">Who is this person?</p>
+                <img src="ad.jpg">
+            </div>
+            <div class="row"  style="padding:0;margin:0;margin-top:20;margin-bottom:20">
+                <div class="col-5">
+                     <div class="form-group">
+                         <input type="text" class="form-control" id="res" placeholder="Your answer here" required>
+                     </div>
+                </div>
+                <br>
+                <div class="col-1" id="adivinanza">
+                     <button onClick={typeClick()} type="submit"  class="btn btn-primary">Submit</button>
+                </div>
+                <div class="col-3" id="adivinanza">
+                    <div class="col">
+                         <div class="col-6">
+                             <p id="text-adivinanza" class="h6">Attemps: </p>
+                         </div>
+                         <div class="col-6" id="intentos">
+                             <p id="respuesta" class="h6" >5</p>
+                         </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+    </div>
+    <div id="alert">
+    </div>
+    <div id="pista1">
+    </div>
+    <div id="pista2">
+    </div>
+    </div>
+</body>
+<script src="script.js">
+
+</script>
+</html>
